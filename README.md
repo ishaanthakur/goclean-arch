@@ -43,7 +43,7 @@ Here is the steps to run it with `docker-compose`
 $ cd workspace
 
 # Clone into YOUR $GOPATH/src
-$ git clone https://github.com/bxcodec/go-clean-arch.git
+$ git clone https://github.com/ishaanthakur/goclean-arch.git
 
 #move to project
 $ cd go-clean-arch
