@@ -1,14 +1,8 @@
-# go-clean-arch
-
-## Looking for the old code ? 
-If you are looking for the old code, you can checkout to the [v1 branch](https://github.com/bxcodec/go-clean-arch/tree/v1)
-
-_Last Updated: May 12th 2018_
 
 ## Description
 This is an example of implementation of Clean Architecture in Go (Golang) projects.
 
-Rule of Clean Architecture by Uncle Bob
+Rule of Clean Architecture
  * Independent of Frameworks. The architecture does not depend on the existence of some library of feature laden software. This allows you to use such frameworks as tools, rather than having to cram your system into their limited constraints.
  * Testable. The business rules can be tested without the UI, Database, Web Server, or any other external element.
  * Independent of UI. The UI can change easily, without changing the rest of the system. A Web UI could be replaced with a console UI, for example, without changing the business rules.
@@ -17,7 +11,7 @@ Rule of Clean Architecture by Uncle Bob
 
 More at https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
 
-This project has  4 Domain layer :
+ project has  4 Domain layer :
  * Models Layer
  * Repository Layer
  * Usecase Layer  
@@ -71,13 +65,3 @@ $ make stop
 ```
 
 
-### Tools Used:
-In this project, I use some tools listed below. But you can use any simmilar library that have the same purposes. But, well, different library will have different implementation type. Just be creative and use anything that you really need. 
-
-- All libraries listed in [`go.mod`](https://github.com/bxcodec/go-clean-arch/blob/master/go.mod) 
-- ["github.com/vektra/mockery".](https://github.com/vektra/mockery) To Generate Mocks for testing needs.
-
-
-### Change log 
- - 2018-04-30 : [Move to new projects folder](https://github.com/bxcodec/go-clean-arch/pull/8)
- - 2018-05-09 : [Add Context](https://github.com/bxcodec/go-clean-arch/pull/9)
