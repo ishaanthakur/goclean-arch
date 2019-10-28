@@ -3,7 +3,7 @@
 Implementation of Clean Architecture in Go.
 
  Clean Architecture guidelines:-
- * Framework Independent. The architecture does not depend on the existence of some library of feature laden software. This allows you to use such frameworks as tools, rather than having to cram your system into their limited constraints.
+ * Framework Independent. The architecture does not depend on the existence of some library of feature dependent software. This allows to implement these frameworks as tools.
  * Testable. The business rules can be tested without the UI, Database, Web Server, or any other external element.
  *  UI Independent. 
  * Independent of Database. You can swap out Oracle or SQL Server, for Mongo, BigTable, CouchDB, or something else. Your business rules are not bound to the database.
