@@ -46,7 +46,7 @@ $ cd workspace
 $ git clone https://github.com/ishaanthakur/goclean-arch.git
 
 #move to project
-$ cd go-clean-arch
+$ cd goclean-arch
 
 # Build the docker image first
 $ make docker
