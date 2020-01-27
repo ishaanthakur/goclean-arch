@@ -1,6 +1,9 @@
 package models
 
-// Author represent the author model
+/**
+
+Author representing the models
+*/
 type Author struct {
 	ID        int64  `json:"id"`
 	Name      string `json:"name"`
