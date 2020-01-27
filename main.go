@@ -1,22 +1,26 @@
 package main
 
 import (
+	
+
+	"os"
+	"time"
+
 	"database/sql"
+
 	"fmt"
 	"log"
 	"net/url"
-	"os"
-	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/labstack/echo"
 	"github.com/spf13/viper"
 
-	_articleHttpDeliver "github.com/bxcodec/go-clean-arch/article/delivery/http"
-	_articleRepo "github.com/bxcodec/go-clean-arch/article/repository"
-	_articleUcase "github.com/bxcodec/go-clean-arch/article/usecase"
-	_authorRepo "github.com/bxcodec/go-clean-arch/author/repository"
-	"github.com/bxcodec/go-clean-arch/middleware"
+	_articleHttpDeliver "github.com/ishaanthakur/goclean-arch/article/delivery/http"
+	_articleRepo "github.com/ishaanthakur/goclean-arch/article/repository"
+	_articleUcase "github.com/ishaanthakur/goclean-arch/article/usecase"
+	_authorRepo "github.com/ishaanthakur/goclean-arch/author/repository"
+	"github.com/ishaanthakur/goclean-arch/middleware"
 )
 
 func init() {
@@ -54,9 +58,7 @@ func main() {
 
 	defer func() {
 		err := dbConn.Close()
-		if err != nil {
-			log.Fatal(err)
-		}
+		if err != nil log.Fatal(err)
 	}()
 
 	e := echo.New()
