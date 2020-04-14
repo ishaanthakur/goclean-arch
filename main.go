@@ -2,9 +2,9 @@ package main
 
 import (
 	
-
-	"os"
 	"time"
+	"os"
+	
 
 	"database/sql"
 
@@ -13,8 +13,9 @@ import (
 	"net/url"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/labstack/echo"
 	"github.com/spf13/viper"
+	"github.com/labstack/echo"
+	
 
 	_articleHttpDeliver "github.com/ishaanthakur/goclean-arch/article/delivery/http"
 	_articleRepo "github.com/ishaanthakur/goclean-arch/article/repository"
